@@ -1,17 +1,102 @@
-# React + Vite
+# 👥 Random Users App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application that displays random users with pagination. Built using React, Axios, and Tailwind CSS, this app fetches user data from a public API and presents it in a clean card-based UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* 🔄 Fetch random users from API
+* 📄 Pagination (Next / Previous)
+* 🎨 Responsive UI with Tailwind CSS
+* ⏳ Loading state handling
+* 📱 Fully responsive (mobile, tablet, desktop)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# random-user-app" 
+* **Frontend:** React (Vite)
+* **Styling:** Tailwind CSS
+* **HTTP Client:** Axios
+* **API:** Free Public Random Users API
+
+---
+
+## 📦 Installation & Setup
+
+Follow these steps to run the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/ajaykumar1298/random-user-app.git
+
+# Navigate to project folder
+cd random-users-app
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+---
+
+## 🌐 API Endpoint
+
+```
+https://api.freeapi.app/api/v1/public/randomusers?page=1
+```
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+│
+├── App.jsx        # Main component
+├── main.jsx       # Entry point
+└── index.css      # Tailwind styles
+```
+
+---
+
+## ⚙️ Functionality Explained
+
+* **Pagination:**
+  Uses `page` state to fetch new users when page changes.
+
+* **API Call:**
+  Axios is used inside `fetchUsers()` to get data.
+
+* **State Management:**
+
+  * `users` → stores API response
+  * `page` → current page number
+  * `loading` → loader state
+
+* **useEffect Hook:**
+  Triggers API call whenever `page` changes.
+
+---
+
+
+## 🧠 Future Improvements
+
+* 🔍 Search functionality
+* 🎯 Filter users by country
+* ⭐ Favorite users feature
+* 📊 Add user details modal
+
+---
+
+## 🙌 Author
+
+**Ajay Kumar**
+
+---
+
+⭐ Support
+If you like this project, give it a ⭐ on GitHub!
